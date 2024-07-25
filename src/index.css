@@ -102,7 +102,7 @@ body {
   margin: 0 0 10px;
 }
 
-.blog-description {
+.blog-heading {
   font-size: 1rem;
   color: #f2f2f2;
   margin: 0 0 15px;
@@ -127,4 +127,260 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+
+
+
+/* CreatePage.css */
+
+.create-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #222831;
+  margin-bottom: 20px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #222831;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button.submit-button {
+  background-color: #f96d00;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit-button:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+button.submit-button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* AboutUs.css */
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #222831;
+  margin-bottom: 20px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-us-text {
+  font-size: 1rem;
+  color: #393e46;
+  line-height: 1.6;
+}
+
+.about-us-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.about-us-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NoPage.css */
+
+.no-page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-page-heading {
+  font-size: 6rem;
+  color: #f96d00;
+  margin-bottom: 20px;
+}
+
+.no-page-message {
+  font-size: 1.25rem;
+  color: #393e46;
+  margin-bottom: 20px;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #f2f2f2;
+  background-color: #222831;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-link:hover {
+  background-color: #393e46;
+  transform: scale(1.05);
+}
+
+.home-link:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+.view-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.view-page-image {
+  width: 100%;
+  max-width: 800px; /* Adjust to your desired maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-bottom: 20px;
+}
+
+.view-page-content {
+  text-align: center;
+  max-width: 800px; /* Ensure the content width matches the image */
+}
+
+.view-page-topic {
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 10px;
+}
+
+.view-page-heading {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin-bottom: 15px;
+}
+
+.view-page-description {
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+
+
+
+/* Modal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
