@@ -16,8 +16,8 @@ const Main = () => {
             <p>{nextData.question}</p>
             <ul>
               {nextData.answers.map((answer) => (
-                <li key={answer.id || answer.text}> {/* Use a unique key */}
-                  <button onClick={(event)=> handleSelect(answer, event, nextData.answer)}>
+                <li key={answer.id || answer.text}>
+                  <button onClick={(event) => handleSelect(answer, event, nextData.answer)}>
                     {answer.text}
                   </button>
                 </li>
@@ -26,9 +26,9 @@ const Main = () => {
           </div>
         )
         :
-        <div>
-            <p>Done</p>
-            <p>Score: {score} out of {dataArr.length}</p>
+        <div className="score-container">
+          <p>Done</p>
+          <p>Score: {score} out of {dataArr.length}</p>
         </div>
       )}
     </>
